@@ -1,2 +1,2 @@
 # seasoned-whitelabel
-A whitelabled shopify site
+A whitelabeled shopify site
