@@ -1,0 +1,53 @@
+<div data-animation="over-left" class="nav-background w-nav" data-easing2="ease" data-easing="ease" data-collapse="tiny" role="banner" data-duration="400" data-doc-height="1">
+    <div class="nav-container">
+      <a href="{{ links.2f }}" class="seasoned-logo-link w-nav-brand"><img src="{{ images.-6da92e84.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;60vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;42vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;228.609375px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;19vw&quot;}]" sizes="(max-width: 479px) 60vw, (max-width: 767px) 42vw, (max-width: 991px) 228.609375px, 19vw" alt="{{ images.-6da92e84.alt | trim | escape }}" class="nav-logo"></a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="{{ links.2c9660e }}" class="nav-link-2 normalize w-nav-link">{{ texts.24897f }}</a>
+        <a href="{{ links.55b8e8be }}" aria-current="page" class="nav-link-2 normalize w-nav-link w--current">{{ texts.3c2336d }}</a>
+      </nav>
+      <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="rightDropdown" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart-button-container">
+        <a href="{{ links.23 }}" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink cart-button w-inline-block"><img src="{{ images.5d41a4b0.url }}" loading="lazy" alt="{{ images.5d41a4b0.alt | trim | escape }}" class="image-2">
+          <div style="display:none" data-count-hide-rule="empty" class="w-commerce-commercecartopenlinkcount cart-quantity">{{ item_count }}</div>
+        </a>
+        <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-rightDropdown">
+          <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer cart-container">
+            <div class="w-commerce-commercecartheader cart-header">
+              <h4 class="w-commerce-commercecartheading">{{ texts.1fef40 }}</h4>
+              <a href="{{ links.23 }}" data-node-type="commerce-cart-close-link" class="w-commerce-commercecartcloselink w-inline-block"><svg width="16px" height="16px" viewBox="0 0 16 16">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill-rule="nonzero" fill="#333333">
+                      <polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon>
+                    </g>
+                  </g>
+                </svg></a>
+            </div>
+            <div class="w-commerce-commercecartformwrapper">
+              <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform">
+                <script type="text/x-wf-template" id="wf-template-dff21b32-82ed-4492-c488-e8aee5b9a07c"><div data-node-type="cart-item" class="w-commerce-commercecartitem"><img data-node-type="cart-item-image" class="image-3 w-commerce-commercecartitemimage" data-sizes="[{"max":10000,"size":"100vw"}]" src="<%= it.image %>"><div data-node-type="cart-item-info" class="w-commerce-commercecartiteminfo"><div data-node-type="cart-product-name" class="text-block-3 w-commerce-commercecartproductname"><%= it.name %></div><div class="text-block-4"><%= it.price %></div><ul class="w-commerce-commercecartoptionlist"><% Object.entries(it.options).forEach( data =>  { %><li data-node-type="cart-option-list-item"><span data-node-type="cart-option-list-item-label"><%= data[0] %></span><span>: </span><span data-node-type="cart-option-list-item-value"><%= data[1] %></span></li><% }) %></ul><a data-node-type="cart-remove-link" href="#" data-product-id="<%= it.uniqueId %>"><div class="text-block-5">Remove</div></a></div><input class="w-commerce-commercecartquantity cart-quantity-2" name="<%= it.uniqueId %>" type="number" min="0" min="1" value="<%= it.quantity %>" data-node-type="cart-quantity"></div></script>
+                <div class="w-commerce-commercecartlist" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-dff21b32-82ed-4492-c488-e8aee5b9a07c"></div>
+                <div class="w-commerce-commercecartfooter cart-footer">
+                  <div class="w-commerce-commercecartlineitem cart-line-item">
+                    <div>{{ texts.-76f396dc }}</div>
+                    <div class="w-commerce-commercecartordervalue text-block-6">{% money  items_subtotal_price  %}</div>
+                  </div>
+                  <div>
+                    
+                    <a href="{{ links.5032f721 }}" value="Continue to Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton checkout-button" data-loading-text="Hang Tight...">{{ texts.-7941186e }}</a>
+                  </div>
+                </div>
+              </form>
+              <div class="w-commerce-commercecartemptystate empty-state">
+                <div>{{ texts.6c28d040 }}</div>
+              </div>
+              <div style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-state">
+                <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">{{ texts.-1c765d0d }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
